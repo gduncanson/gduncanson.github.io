@@ -20,6 +20,7 @@ body {
 
 }
 
+/*header*/
 h1 {
 	color: var(--text-black);
 	text-align: left;
@@ -30,6 +31,7 @@ footer {
 	padding: 20px;
 }
 
+/*navigation bar*/
 nav {
 	padding: 20px 0;
 	text-align: center;
@@ -53,7 +55,15 @@ nav a.active {
 }
 
 nav a:not(.active):hover {
-	color: var(--light-green);
+	color: var(--text-black);
 	background-color: var(--mid-green);
-	
+
+}
+
+.container {
+	text-align: left;
+	padding: 20px;
+	background-color: var(--bone-white);
+	color: var(--text-black);
+	margin: 20px 0;
 }
