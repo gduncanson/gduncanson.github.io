@@ -4,6 +4,7 @@
 	--bone-white: #F4F2EE;
 	--mid-blue: #99AED0;
 	--mid-grey: #6D7D8B;
+	--text-black: #1A1F16;
 }
 
 html, body {
@@ -13,7 +14,7 @@ html, body {
 
 body {
 	background: var(--mid-blue);
-	color: var(--mid-grey);
+	color: var(--text-black);
 	display: flex;
 	flex-direction: column;
 
