@@ -47,7 +47,13 @@ nav a.active {
 	text-decoration: none;
 	padding: 10px;
 	font-weight: bold;
-	color: var(--text-black);
+	color: var(--mid-green);
+	background: var(--mid-grey);
+
+}
+
+nav a:not(.active):hover {
+	color: var(--light-green);
 	background-color: var(--mid-green);
 	
 }
