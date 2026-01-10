@@ -19,3 +19,18 @@ body {
 	flex-direction: column;
 
 }
+
+h1 {
+	color: var(--text-black);
+	text-align: left;
+}
+
+footer {
+	text-align: center;
+	padding: 20px;
+}
+
+nav {
+	background: var(--light-green);
+	color: var(--text-black);
+}
