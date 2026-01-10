@@ -1,10 +1,18 @@
-:root {
+/*:root {
 	--mid-green: #BBD0B3;
 	--light-green: #DDE7C8;
 	--bone-white: #F4F2EE;
 	--mid-blue: #99AED0;
 	--mid-grey: #6D7D8B;
 	--text-black: #1A1F16;
+}*/
+
+:root {
+	--snow-white: #F5F7F6;
+	--fjord-mist: #E2E8E6;
+	--glacier-blue: #C7D6DD;
+	--pine-grey: #7A8F8A;
+	--charcoal-stone: #2E3A3F;
 }
 
 html, body {
@@ -13,8 +21,8 @@ html, body {
 }
 
 body {
-	background: var(--mid-blue);
-	color: var(--text-black);
+	background: var(--glacier-blue);
+	color: var(--charcoal-stone);
 	display: flex;
 	flex-direction: column;
 
@@ -23,14 +31,14 @@ body {
 main {
     flex: 1;
     padding: 20px;
-    background-color: var(--bone-white);
+    background-color: var(--snow-white);
 }
    
 }
 
 /*header*/
 h1 {
-	color: var(--text-black);
+	color: var(--charcoal-stone);
 	text-align: left;
 }
 
@@ -50,31 +58,32 @@ nav a {
 	text-decoration: none;
 	padding: 10px;
 	font-weight: bold;
-	color: var(--text-black);
+	color: var(--charcoal-stone);
 }
 
 nav a.active {
 	text-decoration: none;
 	padding: 10px;
 	font-weight: bold;
-	color: var(--mid-green);
-	background: var(--mid-grey);
+	color: var(--charcoal-stone);
+	background: var(--fjord-mist);
 	border-radius: 5px;
 
 }
 
 nav a:not(.active):hover {
-	color: var(--text-black);
-	background-color: var(--mid-green);
+	color: var(--fjord-mist);
+	background-color: var(--pine-grey);
 	border-radius: 5px;
 }
 
 .container {
 	text-align: left;
 	padding: 20px;
-	background-color: var(--bone-white);
-	color: var(--text-black);
+	background-color: var(--snow-white);
+	color: var(--charcoal-stone);
 	margin: 20px 0;
+	border-radius: 5px;
 }
 
 .page-layout {
@@ -84,32 +93,45 @@ nav a:not(.active):hover {
 
 .sidebar {
     width: 250px;
-    background-color: var(--mid-grey);
+    background-color: var(--glacier-blue);
     padding: 20px;
     box-sizing: border-box;
 }
 
 .sidebar h2 {
     margin-top: 0;
-    color: var(--bone-white);
+    color: var(--charcoal-stone);
 }
 
 .sidebar a {
     display: block;
     padding: 10px;
     margin-bottom: 5px;
-    color: var(--bone-white);
+    color: var(--charcoal-stone);
     text-decoration: none;
     border-radius: 5px;
 }
 
 .sidebar a:hover {
-    background-color: var(--mid-green);
-    color: var(--text-black);
+    background-color: var(--pine-grey);
+    color: var(--fjord-mist);
 }
 
 .sidebar a.active {
-    background-color: var(--mid-blue);
-    color: var(--text-black);
+    background-color: var(--fjord-mist);
+    color: var(--charcoal-stone);
     font-weight: bold;
+}
+
+/*highlighting*/
+/* Chrome, Edge, Safari */
+::selection {
+  background: var(--pine-grey);
+  color: var(--snow-white);
+}
+
+/* Firefox */
+::-moz-selection {
+  background: var(--pine-grey);
+  color: var(--snow-white);
 }
